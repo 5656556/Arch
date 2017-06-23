@@ -19,11 +19,34 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    backBtn.frame = CGRectMake(0, 0, 44, 44);
+    
+    [backBtn setImage:[UIImage imageNamed:@"back"] forState:UIControlStateNormal];
+    [backBtn addTarget:self action:@selector(navBack) forControlEvents:UIControlEventTouchUpInside];
+    
+    UIBarButtonItem *backItem = [[UIBarButtonItem alloc] initWithCustomView:backBtn];
+    self.navigationItem.leftBarButtonItem = backItem;
+
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+
+#pragma mark - action
+
+- (void)navBack {
+    
+    UIViewController *ctrl = [self.navigationController popViewControllerAnimated:YES];
+    if (ctrl == nil) {
+        
+        [self dismissViewControllerAnimated:YES completion:nil];
+        
+    }
+    
 }
 
 
