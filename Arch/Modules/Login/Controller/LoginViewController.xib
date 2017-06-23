@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="gVn-gv-0bc"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tGP-fv-pKt">
+                    <rect key="frame" x="170" y="318" width="34" height="30"/>
+                    <state key="normal" title="login"/>
+                    <connections>
+                        <action selector="loginAction:" destination="-1" eventType="touchUpInside" id="Cfi-j7-aQp"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eeJ-xp-DTT">
+                    <rect key="frame" x="160.5" y="251" width="53" height="30"/>
+                    <state key="normal" title="present"/>
+                    <connections>
+                        <action selector="presentAction:" destination="-1" eventType="touchUpInside" id="MSr-5N-8Gh"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b0a-pa-V27">
+                    <rect key="frame" x="160.5" y="386" width="53" height="30"/>
+                    <state key="normal" title="push"/>
+                    <connections>
+                        <action selector="pushAction:" destination="-1" eventType="touchUpInside" id="Z31-1q-VpQ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="eeJ-xp-DTT" firstAttribute="centerX" secondItem="tGP-fv-pKt" secondAttribute="centerX" id="B6u-yc-jTB"/>
+                <constraint firstItem="tGP-fv-pKt" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="F6I-8K-P4i"/>
+                <constraint firstItem="tGP-fv-pKt" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="KFC-bD-QCd"/>
+                <constraint firstItem="b0a-pa-V27" firstAttribute="top" secondItem="tGP-fv-pKt" secondAttribute="bottom" constant="38" id="KI1-bY-DKv"/>
+                <constraint firstItem="eeJ-xp-DTT" firstAttribute="leading" secondItem="b0a-pa-V27" secondAttribute="leading" id="XLt-A8-qPB"/>
+                <constraint firstItem="eeJ-xp-DTT" firstAttribute="trailing" secondItem="b0a-pa-V27" secondAttribute="trailing" id="fHx-EV-3MO"/>
+                <constraint firstItem="tGP-fv-pKt" firstAttribute="top" secondItem="eeJ-xp-DTT" secondAttribute="bottom" constant="37" id="xet-eS-oRR"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+</document>
